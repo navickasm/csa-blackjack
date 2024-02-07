@@ -1,10 +1,10 @@
-package com.macknavickas.card;
+package com.macknavickas.cardgame;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Deck {
-    private ArrayList<Card> deck;
+    private final ArrayList<Card> deck;
 
     /**
      * Create a new deck of 52 different cards.
@@ -15,7 +15,7 @@ public class Deck {
 
     /**
      * Create a new deck of numberDecks number of decks.
-     * @param numberDecks
+     * @param numberDecks Number of default decks to be added
      */
     public Deck(int numberDecks) {
         deck = new ArrayList<>();
@@ -39,9 +39,7 @@ public class Deck {
      * @param d The deck to add.
      */
     public void addDeck(Deck d) {
-        for (Card c : d.getDeck()) {
-            deck.add(c);
-        }
+        deck.addAll(d.getDeck());
         d.getDeck().clear();
     }
 

@@ -1,12 +1,12 @@
-package com.macknavickas.card;
+package com.macknavickas.cardgame;
 
 /**
  * A basic card in a playing card deck.
  */
 public class Card {
-    private Suit s;
+    private final Suit s;
 
-    private int v;
+    private final int v;
 
     /**
      * Values are stored as follows:

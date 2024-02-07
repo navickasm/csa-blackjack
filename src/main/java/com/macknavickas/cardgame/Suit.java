@@ -1,4 +1,4 @@
-package com.macknavickas.card;
+package com.macknavickas.cardgame;
 
 public enum Suit {
     HEART("♥"),

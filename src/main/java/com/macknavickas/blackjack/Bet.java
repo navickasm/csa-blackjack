@@ -1,4 +1,4 @@
-package com.macknavickas.game;
+package com.macknavickas.blackjack;
 
 /**
  * Represents a single bet
