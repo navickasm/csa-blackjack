@@ -1,10 +1,11 @@
 package com.macknavickas.cardgame;
 
 public enum Suit {
+    SPADE("♠"),
     HEART("♥"),
     CLUB("♣"),
-    DIAMOND("♦"),
-    SPADE("♠");
+    DIAMOND("♦");
+
 
     private final String suitSymbol;
 
