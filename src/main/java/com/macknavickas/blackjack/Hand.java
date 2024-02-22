@@ -34,7 +34,16 @@ public class Hand {
     public int getSize() { return hand.size(); }
 
     public int getHandValue() {
-
+        int value = 0;
+        for (Card c : hand) {
+            if (c.getRank() == 1) {
+                value += (value + 11 <= 21 ? 11 : 1);
+            } else if (c.getRank() > 10 && c.getRank() < 14) {
+                value += 10;
+            } else {
+                value += c.getRank();
+            }
+        }
     }
 
     public int numAces() {
