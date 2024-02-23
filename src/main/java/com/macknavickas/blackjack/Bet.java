@@ -6,5 +6,11 @@ package com.macknavickas.blackjack;
 public class Bet {
     private int amount;
 
+    private Player player;
 
+
+
+    public void payBet() {
+
+    }
 }

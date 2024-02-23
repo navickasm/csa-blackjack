@@ -44,6 +44,7 @@ public class Hand {
                 value += c.getRank();
             }
         }
+        return value;
     }
 
     public int numAces() {
@@ -54,5 +55,25 @@ public class Hand {
         return n;
     }
 
+    public void clearHand() {
+        hand.clear();
+    }
 
+    public boolean blackjack() {
+        return this.getHandValue() == 21 && this.getSize() == 2;
+    }
+
+    public boolean bust () {
+        return this.getHandValue() > 21;
+    }
+
+    public ArrayList<Card> getHand() { return hand; }
+
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        for (Card c : hand) {
+            s.append(c.toString()).append(" ");
+        }
+        return s.toString();
+    }
 }
