@@ -6,6 +6,8 @@ import com.macknavickas.cardgame.Suit;
 
 public class Main {
     public static void main(String[] args) {
+        ConsoleGame g = new ConsoleGame();
+        g.init();
 
     }
 }

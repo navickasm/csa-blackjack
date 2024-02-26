@@ -4,15 +4,16 @@ public class Dealer {
 
     Player[] players;
 
-    Bet[] roundBets;
+    double[] bets;
 
     public Dealer(Player[] players) {
         this.players = players;
     }
 
     public void takeBets() {
-        for (Player p : players) {
-            p.getBet();
+        bets = new double[players.length];
+        for (int i = 0; i < players.length; i++) {
+            bets[i] = players[i].getBet();
         }
     }
 
